@@ -1,6 +1,6 @@
 # Módulo 1 - Descrever os principais conceitos do Azure
 
-# O que aprenderemos?
+## O que aprenderemos?
 Depois de concluir este roteiro, aprenderemos sobre:
 * Os benefícios da computação em nuvem no Azure e como ela pode poupar tempo e dinheiro
 * Conceitos de nuvem, como alta disponibilidade, escalabilidade, elasticidade, agilidade e recuperação de desastre
@@ -14,24 +14,24 @@ Os tópicos abaixo são definidos pela própria Microsoft. A porcentagem indica 
 
 **Observação:** Para conseguir a certificação, é necessário acertar 70% das questões
 
-# Introdução
+## Introdução
 O Azure é uma plataforma de computação em nuvem com um conjunto de serviços em constante expansão, projetado para ajudar você a criar soluções e cumprir suas metas de negócios. Os serviços do Azure variam desde serviços Web simples para hospedar a presença de negócios na nuvem, até a execução de computadores totalmente virtualizados para que você execute suas soluções de software personalizadas. O Azure fornece serviços, como: armazenamento remoto, hospedagem de banco de dados e gerenciamento de conta centralizado. O Azure também oferece novas funcionalidades, como a IA e a IoT (Internet das Coisas).
 
-# O que é nuvem?
+## O que é nuvem?
 Computação em nuvem é a entrega de serviços de computação por meio da internet – servidores, armazenamento, banco de dados, redes, software, analytics, inteligência artificial e muito mais. Possibilitando uma inovação mais rápida, recursos flexíveis e economia de escala (O custo unitário tende a ficar mais barato dependendo do volume do negócio – Mais barato se levar mais).
 
-#	Modelos de nuvem
+## Modelos de nuvem
 Há três modelos de implantação para a computação em nuvem: nuvem pública, nuvem privada e nuvem híbrida. Cada modelo de implantação tem aspectos diferentes que você deve considerar ao migrar para a nuvem. 
-## Nuvem pública - Não significa que é grátis
+### Nuvem pública - Não significa que é grátis
 A nuvem pública pertence ao provedor, e ele é responsável por fornecer recursos e serviços para organizações e usuários. Os serviços são oferecidos pela Internet pública e ficam disponíveis para qualquer pessoa que deseje comprá-los. Alguns recursos de nuvem são: servidores e armazenamento, são de propriedade e operados por um provedor de serviços de nuvem de terceiros e entregues pela Internet.
-##	Nuvem privada
+### Nuvem privada
 Uma nuvem privada consiste em recursos de computação usados exclusivamente por usuários de uma empresa ou organização. Uma nuvem privada pode estar localizada fisicamente no datacenter (local) da organização ou ser hospedada por um provedor de serviços de terceiros.
 
 **Resumidamente:** A nuvem privada pertence e é operada pela organização que utiliza os recursos da nuvem. Para isso, é necessário que a empresa crie um ambiente nuvem em seu datacenter.
-##	Nuvem híbrida
+### Nuvem híbrida
 É a combinação da nuvem pública e da privada para garantir que a aplicação seja executada no local mais apropriado.
 
-## Em tópicos teríamos:
+### Em tópicos teríamos:
 * Nuvem Pública
     * Fornece recursos e serviços para várias organizações e usuários.
     * Recursos compartilhados entre cliente.
@@ -75,11 +75,23 @@ Provedores de nuvem oferecem um Service-level agreement (SLA) isso garante um ce
 Um SLA geralmente garante um uptime próximo de 100%, mas isso só se aplica a sistemas gerenciados pelo provedor de nuvem.
 Dependendo do SLA (Contrato de Nível de Serviço) que você escolher, seus aplicativos baseados em nuvem poderão oferecer uma experiência de usuário contínua, sem tempo de inatividade aparente, mesmo quando as coisas derem errado.	
 
-## Scalability (Escalabilidade)
-* Escalabilidade vertical
-* Escalabilidade horizontal
+## Scalability e Elasticity (Escalabilidade e Elasticidade)
+A melhor maneira de minimizar os custos, é usar somente recursos necessários. Contudo, há ocasiões onde você pode precisar de recursos computacionais adicionais e logo depois não precisar mais. Assim, dependendo do padrão de uso, nós queremos adicionais mais recursos ou menos recursos. 
+A escalabilidade e a elasticidade nos permitem fazer isso. **Escalabilidade é o processo de adicionar novos recursos ou adicionar poder para nossa aplicação**. Há dois tipos:
+* **Escalabilidade horizontal (scaling out):** Adiciona VMs (idênticas as existentes) para a nossa aplicação.
+* **Escalabilidade vertical (scaling up):** Provisiona recursos adicionais para lidar com a carga adicional. Por exemplo: Move uma aplicação para uma VM mais poderosa
 
-## Elasticity (Elasticidade)
+Os provedores de nuvem deixam isso mais simples, ao oferecer a possibilidade de escalar automaticamente baseado no padrão de uso. Podemos escalar baseado em coisas como o uso da CPU ou o uso da memória ou outras métricas especificar para o tipo da aplicação. O conceito de escalabilidade automática é definido como elasticidade.
+
+Um dos maiores benefícios da nuvem é que ela permite você escalar rapidamente, levando apenas alguns segundos para que seja feita a alocação de mais recursos. Essa velocidade e flexibilidade na nuvem é chamada de agilidade.
+
+**Observações:**
+* Escalar verticalmente habilita novas features por causa do poder adicional
+* Também é possível fazer Scaling in e scaling down, para diminuir os recursos utilizados. 
+* No Azure podemos escalar automaticamente ao configurar o Auto-Scale, que é um serviço da Azure.
+
+
+
 ## Agility (Agilidade)
 ## Disaster Recovery (Recuperação de desastre)
 ## Fault Tolerance - Redundância
