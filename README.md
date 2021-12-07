@@ -1,5 +1,7 @@
 # AZ900 - Módulo 1
 ## O que é Nuvem ?
+   Computação em nuvem é a entrega de serviços de computação por meio da internet, possibilitando uma inovação mais rápida, recursos flexíveis e economia de escala (O custo unitário tende a ficar mais barato dependendo do volume do negócio – Mais barato se levar mais).
+
 ## O que é Azure ?
 ## Serviços do Azure
 
