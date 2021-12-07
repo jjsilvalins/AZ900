@@ -165,7 +165,7 @@ Nesse modelo há a cópia da máquina de uma região para outra.
 
 ## Availability Set
 Um Avalability Set é um agrupamento lógico de VMs que permite que o Azure entenda como o seu aplicativo foi criado para fornecer redundância 
-e disponibilidade. Recomenda* se que duas ou mais VMs sejam criadas dentro de um availability set para fornecer um aplicativo altamente disponível
+e disponibilidade. Recomenda-se que duas ou mais VMs sejam criadas dentro de um availability set para fornecer um aplicativo altamente disponível
 e para atender o SLA de 99,95% do Azure. Não há nenhum custo para o conjunto de disponibilidade em si, você paga apenas por cada instância de VM que criar.
 
 Cada máquina virtual em seu availability set receberá um update domain (UD) e um fault domain (FD) da plataforma subjacente do Azure. Todas as máquinas
@@ -246,6 +246,10 @@ O Azure App Services é uma plataforma totalmente gerenciada para construir, imp
 
 ## Azure Container Services 
 Azure Containers são um ambiente virtualizado, leve e que não requer gerenciamento de sistemas operacionais e pode responder às mudanças sob demanda.
+Temos dois tipos de containers no Azure:
+* **Azure Container Instance:** Uma oferta Paas que executa um contêiner no Azure sem a necessidade de gerenciar uma máquina virtual ou serviços adicionais.
+* **Azure Kubernetes Service:** Um serviço de orquestração para contêiners com arquiteturas distribuídas e grandes volumes de contêiners.
 ### VM X Container
 VMs -  Cada máquina virtual possui o seu próprio sistema operacional.
 Containers - Temos apenas um SO, e os containers compartilham ele. 
+ 
