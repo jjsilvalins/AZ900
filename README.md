@@ -25,8 +25,7 @@ Para ser uma nuvem, precisa ter as seguintes características:
   * Combina nuvens públicas e privadas para permitir que os aplicativos sejam executados no local mais apropriado
 
 ## Benefícios de Cloud
-foto: 20:40
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](Imagens/CloudBenefits.jpg "Benefícios da nuvem")
 ### High Avaibility (Alta disponibilidade)
 Recursos deve estar disponível.
 ### Fault Tolerance - Redundância
@@ -66,7 +65,7 @@ Disaster Recovery vs. High Availability vs. Fault Tolerance
 * Capacidade de pagar por recursos adicionais, conforme necessário
 * Capacidade de parar de pagar por recursos que não são mais necessários.
 
-Observação: Existem recursos que ao darmos stop, podemos parar de pagar. Contudo, também há recursos
+**Observação:** Existem recursos que ao darmos stop, podemos parar de pagar. Contudo, também há recursos
 que mesmo quando parados, ainda continuamos pagando. Exemplo: 
 Após a criação e a utilização de uma máquina virtual, se desprovisinarmos/deletarmos ela. Ainda continuamos pagando pelo disco. 
 Não é possível desprovisionar o disco porque as informações seriam perdidas. Assim, é necessário deletar o disco separadamente. 
@@ -85,49 +84,53 @@ Modelo onde tem a maior mão de obra, onde você é responsável por grande part
 * Firewall
 * Antivirus
 * Backup do SO
-IaaS *  Menor responsabilidade para o Provedor.
+IaaS -  Menor responsabilidade para o Provedor.
 
 ## Plataform as a Service (PaaS)
 * Fornece ambiente para construção, testes e implementação de aplicativos de software.
 * Ajuda a criar aplicativos rapidamente, sem se concentrar no gerenciamento de infraestrutura subjacente.
-Exemplo: Imagine que desejamos utilizar um banco de dados
-Em IaaS:
-* Podemos usar SQL Server, para isso, instalamos o SQL no Windows Server. Nesse modo, somos responsáveis por 
+Exemplo: Imagine que desejamos utilizar um banco de dados.
+
+  Em IaaS:
+    * Podemos usar SQL Server, para isso, instalamos o SQL no Windows Server. Nesse modo, somos responsáveis por 
 todo o gerenciamento do SO.
-Em PaaS:
-* Podemos configurar um SQL Database, assim, iremos gerenciar apenas o banco de dados (Acesso, dados). O provedor irá cuidar da 
+
+  Em PaaS:
+    * Podemos configurar um SQL Database, assim, iremos gerenciar apenas o banco de dados (Acesso, dados). O provedor irá cuidar da 
 infraestrutura e questões de disponibilidade.
 
 ## Software as a Service (SaaS)
 * Software hospedado centralmente e gerenciado para usuários finais. Os usuários se conectam e usam aplicativos baseados em nuvem pela internet.
-Por exemplo: Microsoft Office 365, e* mail e calendários.
+Por exemplo: Microsoft Office 365, e-mail e calendários.
 * Onde há o mínimo possível de responsabilidade, só cuidamos dos dados, licença e acesso. 
 
 # Responsabilidade compartilhada
-A tabela abaixo mostra a responsabilidade:
 FOTO: 55:41
-On-Premises: Tudo é sua responsabilidade
-IaaS: 
-Não possui responsabilidade sobre Compute, Networking e Storage *  Componentes físicos (Hardware *  Switch, Datacenter e discos). 
-Você é responsável pelo gerenciamento da máquina virtual, se tem update, aplicações instaladas, acesso e dados (backup).
-PaaS: 
-Não se preocupa com VM nem com SO. Somente com a aplicação, o acesso e os dados.
-SaaS:
-Só se preocupa com o Uso da aplicação (licenciamento e informações)
+
+A tabela abaixo mostra a responsabilidade:
+
+**On-Premises: Tudo é sua responsabilidade**
+## IaaS: 
+* Não possui responsabilidade sobre Compute, Networking e Storage - Componentes físicos (Hardware *  Switch, Datacenter e discos). 
+* Você é responsável pelo gerenciamento da máquina virtual, se tem update, aplicações instaladas, acesso e dados (backup).
+## PaaS: 
+* Não se preocupa com VM nem com SO. Somente com a aplicação, o acesso e os dados.
+## SaaS:
+* Só se preocupa com o Uso da aplicação (licenciamento e informações)
 
 # Componentes arquitetura do Azure
-Regiões do Azure
+## Regiões do Azure
 * Há mais de 60 regiões 
 * As regiões são compostas por um ou mais datacenters próximos.
 * Fornece flexibilidade e escala para reduzir a latência do cliente.
 * Preserva a residência de daos com uma oferta abrangente de conformidade.
 
-Observações:
-* Regiôes anunciadas não significam que estão disponíveis
+**Observações:**
+* Regiões anunciadas não significam que estão disponíveis
 * Nem todos os recursos estão disponíveis para todas as regiões.
 * Regiões tem preços diferentes
 
-Pares de regiões
+## Pares de regiões
 FOTO: 1:02:40
 * Toda região tem o seu par.
 * É necessário pelo menos 300 milhas de separação entre pares de região.
@@ -135,27 +138,30 @@ FOTO: 1:02:40
 * Priorizar a recuperação da região em caso de paralisação
 * As atualização são distribuídas sequencialmente para minimizar o tempo de inatividade.
 
-Observação:
-A segunda região do Brasil (Brazil Southeast *  sudeste) está disponível apenas para alguns serviços, e ainda não é a região par da região Brazil South
+**Observação:** 
+* A segunda região do Brasil (Brazil Southeast - sudeste) está disponível apenas para alguns serviços, e ainda não é a região par da região Brazil South
 
-Opções de Alta disponibilidade
+# Opções de Alta disponibilidade
 A Alta disponibilidade varia de acordo com o serviço, temos três possíveis (para a prova) disponibilidades:
-SINGLE VM: Modelo mais simples de SLA, possui disponibilidade de 99.9% (Período de 30 dias) se um disco Premium for usado. 
-AVAILABILITY SETS: Proteção contra falhas dentro do mesmo datacenter (mesma zona), não há replicação de máquina. Nesse modelo há um SLA de 99.95%
+* **SINGLE VM:** Modelo mais simples de SLA, possui disponibilidade de 99.9% (Período de 30 dias) se um disco Premium for usado. 
+* **AVAILABILITY SETS:** Proteção contra falhas dentro do mesmo datacenter (mesma zona), não há replicação de máquina. Nesse modelo há um SLA de 99.95%
 Exemplo: Pense em diferentes Racks em um mesmo datacenter.
-AVAILABILITY ZONE: Proteção contra falhas inteiras de um datacenter, é a opção com o maior SLA (99.99%).
+* **AVAILABILITY ZONE:** Proteção contra falhas inteiras de um datacenter, é a opção com o maior SLA (99.99%).
 É necessário pelomenos duas máquinas e duas zonas. 
-Observação: Não é cópia é distribuição física em máquinas. 
 
-Opção de Disaster Recovery:
-MULTI REGION DISASTER RECOVERY: Proteção regional dentro dos limites da residência de dados
+**Observação:**  
+* Não é cópia é distribuição física em máquinas. 
+
+## Opção de Disaster Recovery:
+* **MULTI REGION DISASTER RECOVERY:** Proteção regional dentro dos limites da residência de dados
 Nesse modelo há a cópia da máquina de uma região para outra.
-Observação: 
+
+**Observações:**
 * VM e Storage são as que mais caem em prova. 
 * Se a Microsoft não cumprir com o SLA ela paga uma multa para você, sobre o valor de indisponibilidade. 
 
 
-Availability Set
+## Availability Set
 Um Avalability Set é um agrupamento lógico de VMs que permite que o Azure entenda como o seu aplicativo foi criado para fornecer redundância 
 e disponibilidade. Recomenda* se que duas ou mais VMs sejam criadas dentro de um availability set para fornecer um aplicativo altamente disponível
 e para atender o SLA de 99,95% do Azure. Não há nenhum custo para o conjunto de disponibilidade em si, você paga apenas por cada instância de VM que criar.
@@ -163,9 +169,11 @@ e para atender o SLA de 99,95% do Azure. Não há nenhum custo para o conjunto d
 Cada máquina virtual em seu availability set receberá um update domain (UD) e um fault domain (FD) da plataforma subjacente do Azure. Todas as máquinas
 adicionadas a um availability set serão distribuídas de forma dividida entre cada UD e FD.
 
-UD E FD
+### UD E FD
 FOTO: 1:11:40
+
 Update domains (UD): As atualizações programadas de manutenção, desempenho ou segurança são sequenciadas através de domínios de atualização.
+
 Fault domains (FD): Forneça uma separação física de cargas de trabalho em diferentes hardwares em um datacenter. 
 
 UD: Conjuntos que garantem que as máquinas em um update domain, não esteja no mesmo hardware. Isso garante que a aplicação fica disponível 
@@ -173,7 +181,7 @@ caso uma atualização/manutenção de hardware seja necessária.
 
 FD: É o mesmo caso do Update Domain, só que para falhas (não são programadas). 
 
-Availability Zone
+## Availability Zone
 * Uma zona de disponibilidade é uma zona fisicamente separada, dentro de uma região do Azure.
 * Há três zonas de disponibilidade por região do Azure.
 
@@ -190,7 +198,7 @@ Um resouce group é um contêiner para gerenciar e agregar recursos em uma únic
 * Os recursos podem se comunicar com recursos dentro de outros grupos de recursos.
 * Podemos definir uma região para ele, mas podemos colocar recursos de outras regiões nele. 
 
-Observação: 
+**Observação:** 
 * O resource group é um limitador lógico, não físico. 
 * É comum a segmentação por ambiente, por recurso e por aplicação.
 
@@ -208,7 +216,7 @@ Uma assinatura do Azure fornece acesso autenticado e autorizado às contas do Az
 * É a sua conta, nele tem seus recursos, informações referentes ao faturamento/custos e consumo do ambiente da Azure.
 * É o nível mais alto de gerenciamento, assim, os recursos herdam as características da subscription. 
 
-Observação: 
+**Observação:** 
 * Para criar um recurso/Grupo de recurso no Azure é necessário que haja uma Subscription (Primeiro Item). 
 * Podemos ter N Subscriptions dentro de um mesmo ambiente. Isso faz com que o gerenciamento seja mais fácil. 
 
@@ -220,7 +228,7 @@ Observação:
 * O permissionamento de um Management group é aplicado as subscriptions.
 
 # Workloads/Tipos de serviços/Famílias de serviços
-Azure Compute Services
+## Azure Compute Services
 O Azure compute services é um serviço de computação sob demanda que fornece recursos de computação, como discos, processadores, memória, rede e sistemas 
 operacionais. Como:
 * Virtual Machines
@@ -229,16 +237,13 @@ operacionais. Como:
 * Azure Kubernetes Services (AKS)
 * Windows Virtual Desktop (Azure Virtal Desktop)
 
-Azure App Services
+## Azure App Services
 O Azure App Services é uma plataforma totalmente gerenciada para construir, implantar e dimensionar aplicativos web e APIs rapidamente.
 * Compatível com .NET, .NET COre, Node.js, Java, Python ou PHP.
 * PaaS oferecendo com requisitos de desempenho, segurança e conformidade de nível corporativo. 
 
-Azure Container Services 
+## Azure Container Services 
 Azure Containers são um ambiente virtualizado, leve e que não requer gerenciamento de sistemas operacionais e pode responder às mudanças sob demanda.
-VM X Container
-VMs *  Cada máquina virtual possui o seu próprio sistema operacional.
-Containers *  Temos apenas um SO, e os containers compartilham ele. 
-
-
-
+### VM X Container
+VMs -  Cada máquina virtual possui o seu próprio sistema operacional.
+Containers - Temos apenas um SO, e os containers compartilham ele. 
