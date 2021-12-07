@@ -49,18 +49,18 @@ Uma nuvem privada consiste em recursos de computação usados exclusivamente por
     
 ## Comparação dos modelos de nuvem
 ### Nuvem Pública - Opex
-*	Nenhuma despesa de capital para escalar verticalmente.
-*	Os aplicativos podem ser provisionados e desprovisionados rapidamente.
-*	As organizações pagam apenas pelo que utilizam.
-*	Não possui completo controle (Controle físico)
-*	hardware shared between clients, Azure, Office 365
+* Nenhuma despesa de capital para escalar verticalmente.
+* Os aplicativos podem ser provisionados e desprovisionados rapidamente.
+* As organizações pagam apenas pelo que utilizam.
+* Não possui completo controle (Controle físico)
+* hardware shared between clients, Azure, Office 365
 
 ### Nuvem privada
-*	O hardware deve ser comprado para inicialização e manutenção.
-*	As organizações têm controle total sobre os recursos e a segurança.
-*	As organizações são responsáveis pela manutenção e pelas atualizações de hardware.
-*	Controle completo
-*	Azure Stack, looks like data center model, hardware used by a single company (company responsible), no access to users outside of the organization
+* O hardware deve ser comprado para inicialização e manutenção.
+* As organizações têm controle total sobre os recursos e a segurança.
+* As organizações são responsáveis pela manutenção e pelas atualizações de hardware.
+* Controle completo
+* Azure Stack, looks like data center model, hardware used by a single company (company responsible), no access to users outside of the organization
 
 ### Nuvem Híbrida
 * Fornece a maior flexibilidade (usa pública ou privada)
@@ -68,20 +68,20 @@ Uma nuvem privada consiste em recursos de computação usados exclusivamente por
 * As organizações controlam os requisitos de segurança, conformidade ou jurídicos
 
 
-# Benefícios da nuvem
+## Benefícios da nuvem
 ![alt text](Imagens/CloudBenefits.jpg "Benefícios da nuvem")
-## High Avaibility (Alta disponibilidade)
+### High Avaibility (Alta disponibilidade)
 Provedores de nuvem oferecem um Service-level agreement (SLA) isso garante um certo nível de disponibilidade como porcentagem. 
 Um SLA geralmente garante um uptime próximo de 100%, mas isso só se aplica a sistemas gerenciados pelo provedor de nuvem.
 Dependendo do SLA (Contrato de Nível de Serviço) que você escolher, seus aplicativos baseados em nuvem poderão oferecer uma experiência de usuário contínua, sem tempo de inatividade aparente, mesmo quando as coisas derem errado.	
 
-## Scalability e Elasticity (Escalabilidade e Elasticidade)
+### Scalability e Elasticity (Escalabilidade e Elasticidade)
 A melhor maneira de minimizar os custos, é usar somente recursos necessários. Contudo, há ocasiões onde você pode precisar de recursos computacionais adicionais e logo depois não precisar mais. Assim, dependendo do padrão de uso, nós queremos adicionais mais recursos ou menos recursos. 
 A escalabilidade e a elasticidade nos permitem fazer isso. **Escalabilidade é o processo de adicionar novos recursos ou adicionar poder para nossa aplicação**. Há dois tipos:
 * **Escalabilidade horizontal (scaling out):** Adiciona VMs (idênticas as existentes) para a nossa aplicação.
 * **Escalabilidade vertical (scaling up):** Provisiona recursos adicionais para lidar com a carga adicional. Por exemplo: Move uma aplicação para uma VM mais poderosa
 
-Os provedores de nuvem deixam isso mais simples, ao oferecer a possibilidade de escalar automaticamente baseado no padrão de uso. Podemos escalar baseado em coisas como o uso da CPU ou o uso da memória ou outras métricas especificar para o tipo da aplicação. O conceito de escalabilidade automática é definido como elasticidade.
+Os provedores de nuvem deixam isso mais simples, ao oferecer a possibilidade de escalar automaticamente baseado no padrão de uso. Podemos escalar baseado em coisas como o uso da CPU ou o uso da memória ou outras métricas especificar para o tipo da aplicação. **O conceito de escalabilidade automática é definido como elasticidade**.
 
 Um dos maiores benefícios da nuvem é que ela permite você escalar rapidamente, levando apenas alguns segundos para que seja feita a alocação de mais recursos. Essa velocidade e flexibilidade na nuvem é chamada de agilidade.
 
@@ -90,14 +90,12 @@ Um dos maiores benefícios da nuvem é que ela permite você escalar rapidamente
 * Também é possível fazer Scaling in e scaling down, para diminuir os recursos utilizados. 
 * No Azure podemos escalar automaticamente ao configurar o Auto-Scale, que é um serviço da Azure.
 
-
-
-## Agility (Agilidade)
-## Disaster Recovery (Recuperação de desastre)
-## Fault Tolerance - Redundância
-## Global Reach (Alcance global)
-## Security (Segurança)
-## Predictive cost considerations (Considerações de custo preditivo)
+### Agility (Agilidade)
+### Disaster Recovery (Recuperação de desastre)
+### Fault Tolerance - Redundância
+### Global Reach (Alcance global)
+### Security (Segurança)
+### Predictive cost considerations (Considerações de custo preditivo)
 
 # CapEx e OpEx
 ## Capital Expenditure (CapEx) - Compra de Hardware - On-premises
@@ -156,7 +154,8 @@ Por exemplo: Microsoft Office 365, e-mail e calendários.
 * Capacidade de pagar por recursos adicionais, conforme necessário
 * Capacidade de parar de pagar por recursos que não são mais necessários.
 
-**Observação:** Existem recursos que ao darmos stop, podemos parar de pagar. Contudo, também há recursos
+**Observação:** 
+Existem recursos que ao darmos stop, podemos parar de pagar. Contudo, também há recursos
 que mesmo quando parados, ainda continuamos pagando. Exemplo: 
 Após a criação e a utilização de uma máquina virtual, se desprovisinarmos/deletarmos ela. Ainda continuamos pagando pelo disco. 
 Não é possível desprovisionar o disco porque as informações seriam perdidas. Assim, é necessário deletar o disco separadamente. 
