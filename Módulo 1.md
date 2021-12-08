@@ -20,6 +20,33 @@ O Azure é uma plataforma de computação em nuvem com um conjunto de serviços 
 ## O que é nuvem?
 Computação em nuvem é a entrega de serviços de computação por meio da internet – servidores, armazenamento, banco de dados, redes, software, analytics, inteligência artificial e muito mais. Possibilitando uma inovação mais rápida, recursos flexíveis e economia de escala (O custo unitário tende a ficar mais barato dependendo do volume do negócio – Mais barato se levar mais).
 
+## O que é o portal do Azure?
+O portal do Azure é um console unificado baseado na Web que fornece uma alternativa para as ferramentas de linha de comando. Com o portal do Azure, você pode gerenciar a assinatura do Azure usando uma interface gráfica do usuário. Você pode:
+* Compile, gerencie e monitore tudo, desde aplicativos Web simples a implantações em nuvem complexas.
+* Crie painéis personalizados para ter uma exibição organizada dos recursos.
+* Configure opções de acessibilidade para ter a experiência ideal.
+
+## O que é o Azure Marketplace?
+O Azure Marketplace ajuda a conectar usuários a parceiros da Microsoft, fornecedores independentes de software e startups que estão oferecendo soluções e serviços otimizados para execução no Azure. Os clientes do Azure Marketplace podem localizar, experimentar, comprar e provisionar aplicativos e serviços de centenas dos principais provedores de serviço. Todas as soluções e serviços são certificados para execução no Azure.
+
+## Serviços da Azure
+A Azure oferece dezenas de serviços. Os mais utilizados são:
+* Computação
+Serviços de computação são muitas vezes um dos principais motivos pelos quais as empresas mudam para a plataforma do Azure. O Azure fornece uma variedade de opções para hospedar aplicativos e serviços. Aqui estão alguns exemplos de serviços de computação no Azure.
+    * Azure Virtual Machines
+    * Azure Kubernetes 
+    * Azure Functions
+    * Azure Containers Instances
+* Rede
+* Armazenamento
+* Móvel
+* Bancos de dados
+* Web
+* Internet das coisas (IoT)
+* Big Data
+* IA
+* DevOps
+
 ## Modelos de nuvem
 Há três modelos de implantação para a computação em nuvem: nuvem pública, nuvem privada e nuvem híbrida. Cada modelo de implantação tem aspectos diferentes que você deve considerar ao migrar para a nuvem. 
 ### Nuvem pública - Não significa que é grátis
